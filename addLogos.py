@@ -41,7 +41,7 @@ def main(files, target, logos_html):
 
 
 if __name__ == "__main__":
-    files = ['about.html', 'index.html','index-2.html']
+    files = ['about.html', 'index.html','index.html']
     target = 'wapper-client'
     logos = []
     while True:

@@ -3228,14 +3228,9 @@ body.hamburger-menu .header-top {
 }
 
 .main-logo .dark-logo {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s ease, visibility 0.5s ease;
-}
-
-.v-light.menu-light .main-logo .dark-logo {
   opacity: 1;
   visibility: visible;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
 .main-logo .light-logo {
@@ -3244,9 +3239,14 @@ body.hamburger-menu .header-top {
   transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
-.v-light.menu-light .main-logo .light-logo {
+.dark-section .main-logo .dark-logo {
   opacity: 0;
   visibility: hidden;
+}
+
+.dark-section .main-logo .light-logo {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* -------------------------------------------------------
