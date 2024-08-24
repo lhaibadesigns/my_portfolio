@@ -278,9 +278,10 @@
   <script src="assets/js/dsn-grid.js"></script>
   <script type="text/javascript" 
   src=""></script> 
-  <script src="assets/js/custom.js"></script> 
+  <script src="assets/js/custom.js"></script>
+
   <script>
-    const url = "https://formspree.io/xzbvnyon"
+    const url = "https://formspree.io/f/mdknpyzr"
     const submitForm = (e) => {
       e.preventDefault()
       const nameEl = document.getElementById('form_name')
@@ -298,12 +299,10 @@
 
       const status = document.getElementById('send-status')
       status.innerHTML = 'Sending...'
-      
-
       fetch(url, {
         method: 'POST',
         headers: {
-          Accept: 'application.json',
+          Accept: 'application/json',
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
@@ -315,13 +314,11 @@
           (res) => {
             console.log(res)
             status.innerHTML = 'Well Received'
-
             window.location.replace("contact.html")
-          
           }
         )
       }
-      
   </script>
+  
 </body>
 </html>
